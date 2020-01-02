@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    tools:context=".InterestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?backgroundColor"
+        android:id="@+id/customize_toolbar"
+        android:theme="@style/Toolbar"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_gravity="center"
+            android:tint="@color/twitterBlue"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="match_parent"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/customize_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_create_account"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="What are you interested in?" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Select some topics you're interested in to help personalize your Twitter experience, starting with finding people to follow. " />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/layout_linear"
+        android:background="@drawable/layout_top_line_only">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/searchicon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:hint="Search for interests"
+            android:background="@drawable/btn_round_white"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentLeft="true">
+        </Button>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_sports"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:layout_marginTop="260dp"
+    android:background="@drawable/layout_top_line_only"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Sports"
+        android:textSize="25dp"
+        android:layout_marginLeft="13dp"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btn_describe"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_round_blue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Football"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_basketball"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Basketball"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_round_blue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Hockey"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_round_blue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Tennis"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_round_blue"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Riding"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Show mores"
+            android:textSize="15dp"
+            android:layout_marginLeft="19dp"
+            android:layout_below="@+id/btn_basketball"
+            android:textColor="@color/twitterBlue" />
+
+    </RelativeLayout>
+
+
+<RelativeLayout
+        android:id="@+id/layout_news"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_below="@+id/layout_sports"
+        android:background="@drawable/layout_top_line_only"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="News"
+            android:textSize="25dp"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="BBC"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_cnn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="CNN"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="ABC"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginLeft="209dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="CBS"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="309dp"
+            android:layout_marginLeft="309dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Vox"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Show mores"
+        android:textSize="15dp"
+        android:layout_marginLeft="19dp"
+        android:layout_below="@+id/btn_cnn"
+        android:textColor="@color/twitterBlue" />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_below="@+id/layout_news"
+        android:background="@drawable/layout_top_line_only"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Musics"
+            android:textSize="25dp"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/colorBlack" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Folk"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Disco"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Funk"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginLeft="209dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Rock"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="309dp"
+            android:layout_marginLeft="309dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/btn_round_blue"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="POP"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/layout_top_line_only"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Skip for now"
+            android:textColor="@color/twitterBlue"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="40dp"
+            android:text="@string/str_next"
+            android:id="@+id/btn_interest"
+            android:background="@drawable/btn_round_blue"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
