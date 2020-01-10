@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?backgroundColor"
-    tools:context=".PasswordActivity">
+    tools:context=".SuggestionActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -39,42 +39,44 @@
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/colorBlack"
-            android:text="You'll need a password" />
+            android:text="Suggestins for you to follow" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="Make sure it's 6 characters or more" />
+            android:text="When you follow someone, you'll see their Tweets in you Home Timeline. " />
 
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/interest_layout"
         android:layout_width="match_parent"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:layout_below="@+id/layout_linear"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content">
+        android:layout_below="@id/layout_linear">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
-
-        <EditText
-            android:id="@+id/et_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
             android:textSize="20sp"
-            android:hint="Password"
-            android:textColor="@color/colorBlack" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="You may be interested in"/>
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestion_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interest_layout"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -89,7 +91,7 @@
             android:paddingRight="20dp"
             android:layout_height="40dp"
             android:text="@string/str_next"
-            android:id="@+id/btn_password"
+            android:id="@+id/btn_follow"
             android:background="@drawable/btn_round_blue"
             android:textAllCaps="false"
             style="?android:attr/borderlessButtonStyle"
@@ -98,6 +100,5 @@
             android:textColor="@color/colorWhite"/>
 
     </RelativeLayout>
-
 
 </RelativeLayout>

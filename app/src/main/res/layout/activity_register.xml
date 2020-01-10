@@ -50,16 +50,17 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
             app:counterMaxLength="50">
 
         <EditText
+            android:id="@+id/rName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:id="@+id/et_name"
             android:hint="@string/str_name"
             android:maxLength="50"
             android:selectAllOnFocus="true"
@@ -68,13 +69,14 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/remail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_username"
             android:textSize="20sp"
             android:layout_marginTop="15dp"
             android:hint="@string/str_email"
@@ -110,6 +112,24 @@
             style="?android:attr/borderlessButtonStyle"
             android:textSize="15sp"
             android:textColor="@color/colorWhite"/>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:counterEnabled="true"-->
+<!--            >-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/rNam"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:hint="@string/str_name"-->
+<!--                android:visibility="gone"-->
+<!--                android:selectAllOnFocus="true"-->
+<!--                android:textColor="@color/colorBlack" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
     </LinearLayout>
 
 

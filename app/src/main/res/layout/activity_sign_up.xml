@@ -59,10 +59,12 @@
             app:counterMaxLength="50">
 
         <EditText
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:id="@+id/et_name"
+            android:inputType="textPersonName"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:hint="@string/str_name"
             android:textColor="@color/colorBlack"
             android:maxLength="50"
@@ -76,9 +78,9 @@
             android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_username"
             android:textSize="20sp"
             android:layout_marginTop="15dp"
             android:hint="@string/str_email"

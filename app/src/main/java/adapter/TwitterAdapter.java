@@ -30,7 +30,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.TwitterV
     @Override
     public TwitterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.itemlayout_tweet, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate( R.layout.itemlayout_tweet, parent, false);
 
         return new TwitterViewHolder(view);
     }
@@ -59,10 +59,10 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.TwitterV
         public TwitterViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            profile_image=itemView.findViewById(R.id.profile_photo);
-            txtname=itemView.findViewById(R.id.tv_name);
-            txtusername=itemView.findViewById(R.id.tv_username);
-            txttweet=itemView.findViewById(R.id.tv_tweet_text);
+            profile_image=itemView.findViewById( R.id.profile_photo);
+            txtname=itemView.findViewById( R.id.tv_name);
+            txtusername=itemView.findViewById( R.id.tv_username);
+            txttweet=itemView.findViewById( R.id.tv_tweet_text);
 
         }
     }

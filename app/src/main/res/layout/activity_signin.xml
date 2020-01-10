@@ -104,12 +104,12 @@
         android:layout_alignParentBottom="true">
 
         <Button
+            android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_height="40dp"
             android:text="@string/str_log_in"
-            android:id="@+id/btn_login"
             android:background="@drawable/btn_round_blue"
             android:textAllCaps="false"
             style="?android:attr/borderlessButtonStyle"
